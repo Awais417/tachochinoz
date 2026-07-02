@@ -40,7 +40,7 @@ async function CateringMenu() {
       <section className="relative bg-[url('/bgv2.jpg')] bg-repeat-y bg-top bg-size-[100%_auto]">
         <AnimationDiv className="container px-4 py-12 md:py-16 lg:py-20 mx-auto space-y-8">
           {data?.options &&
-            data.options.map((o: NonNullable<typeof data.options>[number], index) => (
+            data.options.map((o: NonNullable<typeof data.options>[number], index: number) => (
               <div
                 key={o._key}
                 className={`bg-yellow border-4 border-dotted border-[#F23B91] p-5 md:p-6 lg:p-8 rounded-xl max-w-xl relative ${index === 1 && "ml-auto"}`}
